@@ -16,10 +16,8 @@ export const Overlay = styled.div`
 export const ModalContent = styled.div`
   border-radius: 25px;
   overflow: hidden;
-
   max-width: calc(100vw - 48px);
   max-height: calc(100vh - 24px);
-
   padding-left: 30px;
   padding-right: 30px;
   background-color: #f9f9f9;

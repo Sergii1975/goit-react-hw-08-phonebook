@@ -4,7 +4,6 @@ import { FaUserPlus } from 'react-icons/fa';
 export const AddUserIcon = styled(FaUserPlus)`
   width: 20px;
   height: 20px;
-
   fill: #fabb18;
 `;
 
@@ -14,24 +13,22 @@ export const Form = styled.form`
   align-items: center;
 `;
 
-// export const Label = styled.label`
-//   display: flex;
-//   flex-direction: column;
-//   gap: 8px;
-//   margin-top: 12px;
-//   font-size: 16px;
-//   font-weight: 500;
-// `;
+export const Label = styled.label`
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 500;
+`;
 
 export const Input = styled.input`
   width: 250px;
   padding: 22px 36px;
-
   color: #000000;
   background: #efefef;
   border-radius: 18px;
   border-style: none;
-
   :placeholder {
     color: #757575;
   }
@@ -66,7 +63,6 @@ export const Button = styled.button`
       fill: #000000;
     }
   }
-
 `;
 
 export const Text = styled.p`

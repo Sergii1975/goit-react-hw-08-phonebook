@@ -1,9 +1,10 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { selectContactsList } from 'redux/contacts/selectors';
 import { addContact } from 'redux/contacts/operations';
-import { Form, Input, Text, Button, AddUserIcon } from './ContactForm.styled';
+import { Form, Input, Label, Text, Button, AddUserIcon } from './ContactForm.styled';
 import { Notify } from 'notiflix';
 import PropTypes from 'prop-types';
+// import { Label } from 'components/RegisterForm/RegisterForm.styled';
 
 export const ContactForm = ({ onCloseModal }) => {
   const dispatch = useDispatch();
@@ -40,7 +41,7 @@ export const ContactForm = ({ onCloseModal }) => {
 
   return (
     <Form onSubmit={handleSubmit} autoComplete="off">
-      <label>
+      <Label>
         <Text>Name</Text>
         <Input
           type="text"
@@ -51,8 +52,8 @@ export const ContactForm = ({ onCloseModal }) => {
           placeholder="Enter name ..."
           value={contacts.name}
         />
-      </label>
-      <label>
+      </Label>
+      <Label>
        <Text>Number</Text>
         <Input
           type="tel"
@@ -62,7 +63,7 @@ export const ContactForm = ({ onCloseModal }) => {
           placeholder="Enter number ..."
           value={contacts.number}
         />
-      </label>
+      </Label>
       <Button type="submit">
         <AddUserIcon />
         New contact
