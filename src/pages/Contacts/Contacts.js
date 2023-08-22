@@ -6,6 +6,8 @@ import { Section } from '../../components/Section/Section';
 import { ContactForm } from '../../components/ContactForm/ContactForm';
 import { Filter } from '../../components/Filter/Filter';
 import { ContactList } from '../../components/ContactList/ContactList';
+import { Modal } from 'components/Modal/Modal';
+import Loader from '../../components/Loader/Loader';
 import {
   AddUserIcon,
   Button,
@@ -14,8 +16,7 @@ import {
   FilterWrapper,
   Title,
 } from './Contacts.styled';
-import { Modal } from 'components/Modal/Modal';
-import Loader from '../../components/Loader/Loader';
+
 
 const Contacts = () => {
   const dispatch = useDispatch();
