@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { NavLink } from 'react-router-dom';
 
 export const Logo = styled(NavLink)`
-  font-family: 'Poppins';
+  font-family: 'Arial';
   font-style: normal;
   font-weight: 800;
   font-size: 36px;
@@ -32,7 +32,8 @@ export const MainNavLink = styled(NavLink)`
   font-size: 18px;
   padding: 22px 28px;
   color: #000000;
-  background-color: #ffffff;
+  background-color: rgb(239, 239, 239);
+  border: 1px solid #000000;
   border-radius: 18px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -41,8 +42,7 @@ export const MainNavLink = styled(NavLink)`
   &:hover,
   :focus {
     font-weight: 600;
-
-    color: #ffffff;
-    background-color: #000000;
+     color: yellow;
+    background-color: #3d5de0;
   }
 `;

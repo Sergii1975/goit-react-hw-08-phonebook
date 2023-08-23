@@ -4,7 +4,7 @@ import { addContact } from 'redux/contacts/operations';
 import { Form, Input, Label, Text, Button, AddUserIcon } from './ContactForm.styled';
 import { Notify } from 'notiflix';
 import PropTypes from 'prop-types';
-// import { Label } from 'components/RegisterForm/RegisterForm.styled';
+
 
 export const ContactForm = ({ onCloseModal }) => {
   const dispatch = useDispatch();

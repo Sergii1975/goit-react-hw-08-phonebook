@@ -38,12 +38,13 @@ export const Input = styled.input`
 export const Button = styled.button`
   font-weight: 600;
   font-size: 18px;
-  color: #fff;
+  color: #000000;
   margin-top: 24px;
   padding: 1.063em 1.5em;
-  background-color: #000000;
+  background-color: rgb(239, 239, 239);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
   border: 1px solid rgba(250, 187, 24, 0.1);
+  border: 1px solid #000000;
   border-radius: 14px;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -52,9 +53,9 @@ export const Button = styled.button`
 
   &:hover,
   :focus {
-    color: #000000;
-    background-color: rgba(250, 187, 24, 0.1);
-    border: 1px solid #000000;
+     color: yellow;
+    background-color: #3d5de0;;
+    
   }
 `;
 

@@ -27,6 +27,6 @@ export const AuthLink = styled(NavLink)`
 &:hover,
  :focus {
     color: yellow;
-    background-color: #3d5de0;
+    background-color: green;
   }
   `;

@@ -48,20 +48,16 @@ export const LogOutBtn = styled.button`
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
-
   padding: 18px 26px;
-
-  color: #ffffff;
-  background-color: #000000;
-
-  border: 1px solid #fabb18;
+  color: #000000;
+  background-color: rgb(239, 239, 239);
+  border: 1px solid #000000;
   border-radius: 14px;
-
   cursor: pointer;
 
   &:hover,
   :focus {
-    color: #000000;
-    background: rgba(250, 187, 24, 0.1);
+    color: yellow;
+    background-color: #3d5de0;;
   }
 `;
