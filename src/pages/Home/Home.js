@@ -4,7 +4,7 @@ import { ContentPageContainer } from './Home.styled';
 const Home = () => {
   return (
     <ContentPageContainer>
-      <Section title="Welcome to Phone Book" />
+      <Section title="Welcome to Phone Book!" />
     </ContentPageContainer>
   );
 };
