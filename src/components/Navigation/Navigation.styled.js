@@ -9,14 +9,16 @@ export const Logo = styled(NavLink)`
   margin-right: 114px;
   color: #000000;
   > span {
-    color: #fabb18;
+    // color: #fabb18;
+    color: green;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   :focus {
-    color: #fabb18;
+    // color: #fabb18;
+    color: green;
     > span {
       color: #000000;
     }
