@@ -21,7 +21,7 @@ export const ContactForm = ({ onCloseModal }) => {
       return Notify.warning(`Alert, ${formName} is already in contacts`);
     }
 
-    if (contacts.some(({ number }) => number === formNumber.trim() || number.trim() === formNumber.trim())) {
+    if (contacts.some(({ number }) => number === formNumber.trim())) {
       return Notify.warning(`Alert, ${formNumber} is already in contacts`);
     }
 
