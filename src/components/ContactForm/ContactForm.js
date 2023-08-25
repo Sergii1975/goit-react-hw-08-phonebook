@@ -16,12 +16,13 @@ export const ContactForm = ({ onCloseModal }) => {
     const form = e.target;
     const formName = e.target.elements.name.value;
     const formNumber = e.target.elements.number.value;
-    if (contacts.some(({ name }) => name === formName)) {
-      return alert(`${formName} is already in contacts`);
+    
+    if (contacts.some(({ name }) => name.toLowerCase().trim() === formName.toLowerCase().trim() || name.trim() === formName.trim())) {
+      return Notify.warning(`Alert, ${formName} is already in contacts`);
     }
 
-    if (contacts.some(({ number }) => number === formNumber)) {
-      return alert(`${formNumber} is already in contacts`);
+    if (contacts.some(({ number }) => number === formNumber.trim() || number.trim() === formNumber.trim())) {
+      return Notify.warning(`Alert, ${formNumber} is already in contacts`);
     }
 
     dispatch(addContact({ name: formName, number: formNumber.toString() }))
@@ -32,7 +33,7 @@ export const ContactForm = ({ onCloseModal }) => {
         );
       })
       .catch(() => {
-        Notify.failure("Sorry, something's wrong");
+       Notify.failure("Sorry, something's wrong");
       });
 
     onCloseModal();
